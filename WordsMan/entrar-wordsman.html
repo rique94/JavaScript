@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entra WordsMan</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(11, 87, 11);
+        }
+        label {
+            margin: 5px;
+        }
+        input {
+            margin: 5px;
+            background-color: rgb(19, 109, 19);
+            color: rgb(255, 255, 255);
+            border: 1px solid white;
+        }
+        fieldset {
+            background-image: linear-gradient(to bottom, rgb(7, 121, 102), rgb(4, 105, 43));
+            color: white;
+            font-weight: bold;
+            border: 2px solid white;
+        }
+    </style>
+</head>
+<body>
+    <fieldset>
+        <legend>Entrar na conta de WordsMan</legend>
+        <form action="jogatina-wordsman.html" method="post">
+            <div>
+                <label for="inome">Nome de Usuário: </label>
+                <input type="text" name="Nome" id="inome" required>
+            </div>
+            <div>
+                <label for="isenha">Senha de Usuário: </label>
+                <input type="password" name="senha" id="isenha" required minlength="5" maxlength="15">
+            </div>
+            <div>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </div>
+        </form>
+     </fieldset>
+</body>
+</html>
